@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "section2/switch.dart"
+            "program": "section2/for_while_dowhile_loops.dart"
         }
     ]
 }
