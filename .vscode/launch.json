@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "section1/string_literals_interpolation.dart"
+            "program": "section1/homework.dart"
         }
     ]
 }
