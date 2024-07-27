@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "section2/ternary_short_if.dart"
+            "program": "section2/switch.dart"
         }
     ]
 }
