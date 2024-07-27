@@ -13,4 +13,6 @@ void main(List<String> args) {
   double height = 12;
 
   print("width: $width and height: $height | area: ${width * height}");
+  print(lessonDesc);
+  print(lesson);
 }
