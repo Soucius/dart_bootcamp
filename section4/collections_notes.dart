@@ -3,6 +3,10 @@ void main(List<String> args) {
   var mySet = <String, dynamic>{"age": 22};
   var myMap = <String>{"soucius", "kaenj"};
 
+  print(myList);
+  print(mySet);
+  print(myMap);
+
   var evenNums = [1, 3, 5];
   var oddNums = [2, 4, 6];
 
