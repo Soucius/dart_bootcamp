@@ -1,5 +1,5 @@
 void main(List<String> args) {
-  Ogrenci soucius = Ogrenci();
+  Student soucius = Student();
   soucius.studentName = "soucius";
   soucius.studentNo = 2002;
   soucius.isActive = true;
@@ -7,7 +7,7 @@ void main(List<String> args) {
   print(soucius.studentName);
 }
 
-class Ogrenci {
+class Student {
   int? studentNo;
   String? studentName;
   bool? isActive;
