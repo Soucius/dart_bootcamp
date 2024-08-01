@@ -1,18 +1,16 @@
+import 'customer.dart';
 import 'database_actions.dart';
 
 void main(List<String> args) {
   DatabaseActions db = DatabaseActions();
-  DatabaseActions db2 = DatabaseActions.loginWithUser("sean", "magnus");
+  Customer customer = Customer(150);
   bool result = db.connect();
-  bool result2 = db2.connect();
+
+  customer.showInfos();
+  customer.giveCustomerNo = 952;
+  print(customer.showCustomerNo);
 
   if (result) {
-    print("connected!");
-  } else {
-    print("can't connect");
-  }
-
-  if (result2) {
     print("connected!");
   } else {
     print("can't connect");
