@@ -1,11 +1,26 @@
 void main(List<String> args) {
   User user1 = User();
-  user1.signIn();
-  NormalUser normal1 = NormalUser();
-  normal1.signIn();
+  NormalUser user2 = NormalUser();
+  OnlyReadUser user3 = OnlyReadUser();
+  AdminUser user4 = AdminUser();
+  User user5 = AdminUser();
+  User user6 = OnlyReadUser();
 
-  OnlyReadUser readUser = OnlyReadUser();
-  readUser.signIn();
+  List<User> allUsers = [];
+  allUsers.add(user1);
+  allUsers.add(user2);
+  allUsers.add(user3);
+
+  test(user1);
+  test(user2);
+  test(user3);
+  test(user4);
+  test(user5);
+  test(user6);
+}
+
+void test(User user) {
+  user.signIn();
 }
 
 class User {
@@ -42,5 +57,10 @@ class OnlyReadUser extends NormalUser {
 class AdminUser extends User {
   void totalUser() {
     print("total user: 20");
+  }
+
+  @override
+  void signIn() {
+    print("admin user signed in");
   }
 }
