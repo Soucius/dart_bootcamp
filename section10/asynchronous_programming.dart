@@ -1,15 +1,19 @@
 void main(List<String> args) {
-  takeWhileProcess();
+  takeWhileProcess()
+      .then((value) => print(value))
+      .catchError((e) => print(e))
+      .whenComplete(() => print("market process finished"));
 
   print("mom prepare breakfast table");
 
   print("breakfast ready");
 }
 
-void takeWhileProcess() {
+Future<String> takeWhileProcess() {
   print("child gone to market");
 
-  Future.delayed(Duration(seconds: 5), () {
-    print("child came to home");
+  return Future<String>.delayed(Duration(seconds: 2), () {
+    return "child came to home";
+    // throw Exception("market doesn't open");
   });
 }
