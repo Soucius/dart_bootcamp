@@ -1,4 +1,12 @@
-void main(List<String> args) {}
+void main(List<String> args) async {
+  Map<String, dynamic> user = await idPerson(6);
+
+  List<String> courseList = await usernameCourses(user["username"]);
+
+  String comment = await firstComment(courseList.first);
+
+  print(comment);
+}
 
 Future<String> firstComment(String course) {
   return Future<String>.delayed(Duration(seconds: 1), () {
